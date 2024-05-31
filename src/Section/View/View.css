@@ -1,0 +1,89 @@
+/* ------------------------------- News Section ----------------------- */
+.news-section {
+    background-color: rgb(13, 38, 18);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-title {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    color: white;
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.news-card{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.news-card img{
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+.news-card h4{
+    color: white;
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.news-card p{
+    color: white;
+    font-family: "Readex Pro", sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.news-link {
+    color: white;
+    text-decoration: underline;
+    gap: 3px;
+    font-family: "Readex Pro", sans-serif;
+    font-size: 12px;
+}
+
+/* ------------------------------- Product Display Section ----------------------- */
+
+.display-section {
+    background-color: rgb(13, 38, 18);
+}
+
+.wrapper {
+    padding-top: 50px;
+}
+
+.display-nav-container {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 215px;
+}
+
+.display-nav{
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.display-nav-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 8px;
+    width: 100px;
+    background-color: rgb(33, 213, 17);
+    transition: all 0.3s ease;
+}

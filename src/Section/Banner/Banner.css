@@ -1,0 +1,69 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("/assets/bacground.png") no-repeat;
+}
+
+.overlay {
+    position: absolute;
+    top: 150px;
+    left: 185px; 
+    bottom: 0;
+    width: 400px; 
+    padding: 20px;
+}
+
+.overlay h1{
+    font-family: "Hammersmith One", sans-serif;
+    margin-bottom: 25px;
+    background: linear-gradient(45deg, white, rgb(33, 213, 17));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.overlay p{
+    color: white;
+    font-family: "Readex Pro", sans-serif;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.overlay button{
+    padding: 10px 80px;
+    outline: none;
+    background-color: rgb(33, 213, 17);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.overlay button:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.info p{
+    font-weight: bold;
+    font-family: "Hammersmith One", sans-serif;
+    word-spacing: 3px;
+
+}
+
+.info span{
+    color: rgb(33, 213, 17);
+}
