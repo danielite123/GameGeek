@@ -1,0 +1,120 @@
+.footer {
+  width: 100%;
+  height: 420px;
+  background-color: rgb(13, 38, 18);
+  color: white;
+}
+
+.footer-content {
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 40px;
+  margin-right: 120px;
+}
+
+.flogo {
+  font-family: "Nicomoji";
+  font-size: 30px;
+  font-weight: 100px;
+  color: white;
+}
+
+.footer-logo p {
+  font-family: "Inter";
+  font-size: 20px;
+  background: linear-gradient(45deg, white, rgb(33, 213, 17));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.footer-services {
+  margin-right: -120px;
+}
+
+.footer-services,
+.footer-help,
+.footer-about {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-services h4,
+.footer-help h4,
+.footer-about h4 {
+  font-family: "Inter";
+  font-size: 20px;
+}
+
+.footer-services ul,
+.footer-help ul,
+.footer-about ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style-type: none;
+}
+
+.footer-about {
+  margin-right: 40px;
+  margin-left: -120px;
+}
+
+.flink {
+  color: white;
+  font-family: "Inter";
+  font-size: 12px;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-left: 60px;
+}
+
+.social img {
+  width: 20px;
+  height: 20px;
+}
+
+.line {
+  border: 1px solid white;
+  margin-top: 40px;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.footer-bottom p {
+  font-family: "Inter";
+  font-size: 12px;
+}
+
+.footer-bottom span {
+  font-family: "Nicomoji";
+}

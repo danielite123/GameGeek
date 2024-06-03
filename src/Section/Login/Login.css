@@ -1,0 +1,197 @@
+.login-container{
+    width: 350px;
+    height: 80vh;
+    padding: 20px;
+    background-color: #fff;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.login-box h1{
+    font-family: "NicoMoji";
+    font-weight: 100;
+    font-size: 30px;
+    text-align: center;
+}
+
+.login-box p{
+    margin-top: 20px;
+    font-family: "Inter";
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    font-size: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    outline: none;
+    font-family: "Inter";
+    color: #666;
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #666;
+    font-size: 12px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    font-family: "Inter";
+}
+
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+    bottom: 20px;
+    left: 0;
+    font-size: 12px;
+    color: #666;
+    
+    
+}
+
+input:focus {
+    border-bottom: 1px solid rgb(33, 213, 17);
+}
+
+input:focus + label{
+    transform: translateY(-16px);
+}
+
+/* Hide placeholder to trigger label animation */
+input::placeholder {
+    color: transparent;
+}
+
+/* For required input to show placeholder text when input is empty */
+input:placeholder-shown {
+    border-bottom: 1px solid #ccc;
+}
+
+input:focus:placeholder-shown {
+    border-bottom: 1px solid #000;
+}
+
+.link-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.forgot-password {
+    margin-top: 20px;
+    color: rgb(33, 213, 17);
+    font-size: 12px;
+    font-family: "Inter";
+}
+
+.forgot-password:hover{
+    text-decoration: underline;
+}
+
+.btn-container, .create-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+.login-btn{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(33, 213, 17);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Inter";
+    font-weight: bold;
+    color: white;
+}
+
+.login-btn:hover{
+    opacity: 0.7;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    margin-top: 52px;
+    font-size: 16px;
+    font-family: "Inter";
+    color: #666;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.divider::before {
+    margin-right: .25em;
+}
+
+.divider::after {
+    margin-left: .25em;
+}
+
+.social-login-container {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.social-login-text {
+    color: green;
+    margin-right: 34px;
+    font-family: "Inter";
+    font-size: 10px;
+}
+
+.social-login-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-login-button {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.social-login-button img {
+    width: 15px;
+    height: 15px;
+}
+
+.create-container p{
+    color: rgb(33, 213, 17);
+    font-family: "Inter";
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.create-container p:hover{
+    text-decoration: underline;
+}

@@ -66,9 +66,6 @@ const View = () => {
           </div>
           <NavHighlight />
         </div>
-        <div>
-          
-        </div>
       </section>
     </main>
   );
