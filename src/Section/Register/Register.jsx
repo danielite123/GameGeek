@@ -12,7 +12,7 @@ const Register = () => {
           <label htmlFor="firstname">Firstname</label>
         </div>
         <div className="input-box">
-          <input type="text" id="lastname" name="lastname" placeholder="lastname" required />
+          <input type="text" id="lastname" name="lastname" required />
           <label htmlFor="lastname">Lastname</label>
         </div>
         <div className="input-box">
@@ -32,25 +32,27 @@ const Register = () => {
         </div>
         <div className="divider">OR</div>
         <div className="social-register-container">
-        <span className="social-register-text">Continue with:</span>
-        <div className="social-register-buttons">
+          <span className="social-register-text">Continue with:</span>
+          <div className="social-register-buttons">
             <Link href="#" className="social-register-button">
-                <img src="/assets/facebook-symbolsvg.svg" alt="Facebook"/>
+              <img src="/assets/facebook-symbolsvg.svg" alt="Facebook" />
             </Link>
             <Link href="#" className="social-register-button">
-                <img src="/assets/apple-logosvg.svg" alt="Apple"/>
+              <img src="/assets/apple-logosvg.svg" alt="Apple" />
             </Link>
             <Link href="#" className="social-register-button">
-                <img src="/assets/google-symbolsvg.svg" alt="Google"/>
+              <img src="/assets/google-symbolsvg.svg" alt="Google" />
             </Link>
-        </div>
+          </div>
         </div>
         <div className="create-container">
-          <Link className="login-link" to="/login">Don&apos;t have account? Login</Link>
+          <Link className="login-link" to="/login">
+            Don&apos;t have account? Login
+          </Link>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Register;

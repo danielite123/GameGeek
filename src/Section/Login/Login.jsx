@@ -25,21 +25,23 @@ const Login = () => {
         </div>
         <div className="divider">OR</div>
         <div className="social-login-container">
-        <span className="social-login-text">Continue with:</span>
-        <div className="social-login-buttons">
+          <span className="social-login-text">Continue with:</span>
+          <div className="social-login-buttons">
             <Link href="#" className="social-login-button">
-                <img src="/assets/facebook-symbolsvg.svg" alt="Facebook"/>
+              <img src="/assets/facebook-symbolsvg.svg" alt="Facebook" />
             </Link>
             <Link href="#" className="social-login-button">
-                <img src="/assets/apple-logosvg.svg" alt="Apple"/>
+              <img src="/assets/apple-logosvg.svg" alt="Apple" />
             </Link>
             <Link href="#" className="social-login-button">
-                <img src="/assets/google-symbolsvg.svg" alt="Google"/>
+              <img src="/assets/google-symbolsvg.svg" alt="Google" />
             </Link>
-        </div>
+          </div>
         </div>
         <div className="create-container">
-          <p>Don&apos;t have account? Create account</p>
+          <Link to="/register">
+            <p>Don&apos;t have account? Create account</p>
+          </Link>
         </div>
       </div>
     </div>

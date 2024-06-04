@@ -1,66 +1,65 @@
 header {
-    background-color: rgb(13, 38, 18);
-    height: 40px;
-    display: flex;
-    flex: 1;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 0px;
-
+  background-color: rgb(13, 38, 18);
+  height: 40px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0px;
 }
 
-.card{
-    display: flex;
+.card {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
-.card p{
-    color: white;
+.card p {
+  color: white;
 }
 
-.phone{
-    display: flex;
-    gap: 10px;
-    margin-left: 20px;
-    font-family: "Inter", sans-serif;
-    font-size: 12px;
-    align-items: center;
+.phone {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  align-items: center;
 }
 
-hr{
-    color: rgb(9, 167, 9);
-    margin-left: 15px;
-    margin-right: 15px;
+.space {
+  margin-left: 70px;
 }
 
-.space{
-    margin-left: 70px;
+.space2 {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  margin-right: 10px;
 }
 
-.space2{
-    font-family: "Inter", sans-serif;
-    font-size: 12px;
-    margin-right: 10px;
+.space3 {
+  margin-right: 140px;
+  gap: 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
 }
 
-.space3{
-    margin-right: 140px;
-    gap: 30px;
-    font-family: "Inter", sans-serif;
-    font-size: 12px;
+.language {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  align-items: center;
 }
 
-.language{
-    display: flex;
-    flex-direction: row;
-    gap: 3px;
-    align-items: center;
+.location {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-left: 20px;
+  align-items: center;
 }
 
-.location{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    margin-left: 20px;
-    align-items: center;
+.header-border {
+  border-right: 2px solid rgb(33, 213, 17);
 }

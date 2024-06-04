@@ -1,8 +1,44 @@
+import { useState, useRef } from "react";
 import "./View.css";
 import { Link } from "react-router-dom";
 import NavHighlight from "./NavHighlight";
+import { Navigation, Pagination } from "swiper/modules";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 const View = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const swiperRef = useRef(null);
+
+  const handlePaginationClick = (index) => {
+    setCurrentIndex(index);
+    if (swiperRef.current) {
+      swiperRef.current.slideTo(index);
+    }
+  };
+
+  const renderPagination = () => {
+    return (
+      <div>
+        {[1, 2].map((_, index) => (
+          <span
+            key={index}
+            className={`swiper-pagination-bullet ${
+              index === currentIndex ? "swiper-pagination-bullet-active" : ""
+            }`}
+            onClick={() => handlePaginationClick(index)}
+          />
+        ))}
+      </div>
+    );
+  };
+
   return (
     <main>
       <section className="news-section">
@@ -66,6 +102,170 @@ const View = () => {
           </div>
           <NavHighlight />
         </div>
+        <div className="swipper-container">
+          <Swiper
+            slidesPerView={4}
+            spaceBetween={30}
+            ref={swiperRef}
+            onSwiper={(swiper) => {
+              swiperRef.current = swiper;
+              setCurrentIndex(swiper.realIndex);
+            }}
+            navigation={true}
+            onSlideChange={(swiper) => setCurrentIndex(swiper.activeIndex)}
+            modules={[Pagination, Navigation]}
+          >
+            <SwiperSlide>
+              <Link to="/product">
+                <div className="display-slide">
+                  <img src="/assets/display1.png" alt="" />
+                  <p>
+                    LOGITECH Gaming
+                    <br />
+                    Headset
+                  </p>
+                  <p>699,99 €</p>
+                </div>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link to="/product">
+                <div className="display-slide">
+                  <img src="/assets/display2.png" alt="" />
+                  <p>
+                    CHAIR Gaming
+                    <br />
+                    MGCPROFBL Gaming
+                  </p>
+                  <p>149,90 €</p>
+                </div>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link to="/product">
+                <div className="display-slide">
+                  <img src="/assets/display3.png" alt="" />
+                  <p>
+                    Mando Microsoft
+                    <br />
+                    Xbox Controller
+                  </p>
+                  <p>534,99 €</p>
+                </div>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link to="/product">
+                <div className="display-slide">
+                  <img src="/assets/display4.png" alt="" />
+                  <p>
+                    PC Gaming
+                    <br />
+                    NEOMEDI05 NEOPC
+                  </p>
+                  <p>699,99 €</p>
+                </div>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link to="/product">
+                <div className="display-slide">
+                  <img src="/assets/display1.png" alt="" />
+                  <p>
+                    LOGITECH Gaming
+                    <br />
+                    Headset
+                  </p>
+                  <p>699,99 €</p>
+                </div>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link to="/product">
+                <div className="display-slide">
+                  <img src="/assets/display2.png" alt="" />
+                  <p>
+                    CHAIR Gaming
+                    <br />
+                    MGCPROFBL Gaming
+                  </p>
+                  <p>149,90 €</p>
+                </div>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link to="/product">
+                <div className="display-slide">
+                  <img src="/assets/display3.png" alt="" />
+                  <p>
+                    Mando Microsoft
+                    <br />
+                    Xbox Controller
+                  </p>
+                  <p>534,99 €</p>
+                </div>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link to="/product">
+                <div className="display-slide">
+                  <img src="/assets/display4.png" alt="" />
+                  <p>
+                    PC Gaming
+                    <br />
+                    NEOMEDI05 NEOPC
+                  </p>
+                  <p>699,99 €</p>
+                </div>
+              </Link>
+            </SwiperSlide>
+          </Swiper>
+
+          <div className="flex justify-center items-center">
+            <div className="mt-2">{renderPagination()}</div>
+          </div>
+        </div>
+      </section>
+      <section className="service-section">
+        <div className="service-wrapper">
+          <p>
+            EVERYTHING YOU NEED IS <span>HERE</span>
+          </p>
+          <div className="services-box">
+            <div className="support-service">
+              <img src="/assets/Group 247.png" alt="" />
+              <p>
+                <span>24/7 support</span>
+                <br />
+                online consultation
+              </p>
+            </div>
+            <div className="service-border"></div>
+            <div className="delivery-service">
+              <img src="/assets/vector-5.svg" alt="" />
+              <p>
+                <span>Free delivery</span> on
+                <br />
+                orders from 39$
+              </p>
+            </div>
+            <div className="service-border"></div>
+            <div className="refurnd-service">
+              <img src="/assets/fibsshieldcheck.svg" alt="" />
+              <p>
+                <span>Easy Returns</span> and <span>30-day</span> money
+                <br />
+                back guaranty. <span>More information</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="framer-section">
+        <h1 className="framer-title">
+          <span className="framer-highlight">JUST</span> FOR YOU
+        </h1>
+        <p className="framer-subtitle">GAMING EQUIPMENT</p>
       </section>
     </main>
   );
