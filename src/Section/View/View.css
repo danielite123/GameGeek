@@ -115,14 +115,14 @@
   width: 12px;
   height: 12px;
   margin: 0 5px;
-  background-color: #8d8daf !important;
+  background-color: rgb(20, 255, 0) !important;
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #4a66e8 !important;
+  background-color: rgb(20, 255, 0) !important;
   width: 64px !important;
   border-radius: 20px !important;
 }
@@ -166,7 +166,6 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
-  /* width: 300px; */
   align-items: center;
 }
 
@@ -188,14 +187,25 @@
 
 .framer-section {
   background-color: rgb(213, 248, 207);
-  height: 600px;
+  height: 900px;
   padding: 1px;
 }
 
+.framer-wrapper {
+  margin: 60px 0px 0px 60px;
+  display: inline-block;
+}
+
 .framer-title {
-  font-size: 3em;
-  color: #24e14e;
-  margin: 0;
+  font-size: 70px;
+  color: rgb(20, 255, 0);
+  font-family: "Hammersmith One";
+}
+
+.fd {
+  position: relative;
+  left: 160px;
+  top: -47px;
 }
 
 .framer-highlight {
@@ -204,7 +214,87 @@
 }
 
 .framer-subtitle {
+  position: relative;
+  top: -120px;
+  left: 80px;
   font-size: 1.5em;
   color: black;
-  margin-top: -10px;
+  font-family: "Hammersmith One";
+  visibility: visible;
+}
+
+.framer-product-container {
+  width: 1000px;
+  height: 450px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: -20px;
+}
+
+.framer-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.framer-product img {
+  width: 80%;
+  height: 80%;
+}
+
+.framer-product p {
+  font-size: 18px;
+  font-family: "Hammersmith One";
+}
+
+.framerbtn {
+  width: 180px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgb(11, 164, 45);
+  color: white;
+  font-size: 16px;
+  align-items: center;
+  font-weight: bold;
+  font-family: "Inter";
+}
+
+/* ------------------------------- Join Section ----------------------- */
+
+.join-us {
+  background: url("../../../public/assets/Rectangle 11.png");
+  background-size: cover;
+  height: 518px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.join-us-wrapper {
+  margin-top: 70px;
+  margin-left: 150px;
+}
+
+.join-us h1 {
+  color: white;
+  font-size: 50px;
+  font-family: "Hammersmith One";
+  margin-bottom: 50px;
+}
+
+.join-us button {
+  background: rgb(20, 255, 0);
+  height: 40px;
+  width: 220px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: "Inter";
+  font-weight: bold;
+  align-items: center;
+  font-size: 16px;
 }

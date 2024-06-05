@@ -1,49 +1,48 @@
-.header{
-    background: url("/assets/bacground.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+.header {
+  background: url("/assets/bacground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
 }
 
-.nav-card{
-    display: flex;
-    justify-content: space-between;
-    flex: 1; 
-    align-items: center;  
+.nav-card {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-items: center;
 }
 
 .link {
-    color: white;
-    font-size: 13px;
-    font-weight: 200;
-    font-size: "Inter", sans-serif;
+  color: white;
+  font-size: 13px;
+  font-weight: 200;
+  font-size: "Inter", sans-serif;
 }
 
 .logo {
-    margin-left: 170px;
+  margin-left: 170px;
 }
 
 .logo-link {
-    color: white;
-    font-size: 30px;   
-    font-family: "NicoMoji";
+  color: white;
+  font-size: 30px;
+  font-family: "NicoMoji";
 }
 
-
-.middle{
-    display: flex;
-    gap: 50px;
+.middle {
+  display: flex;
+  gap: 50px;
 }
 
-.bar{
-    display: flex;
-    gap: 50px;
-    margin-right: 150px;
+.bar {
+  display: flex;
+  gap: 50px;
+  margin-right: 150px;
 }

@@ -26,7 +26,7 @@ const View = () => {
   const renderPagination = () => {
     return (
       <div>
-        {[1, 2].map((_, index) => (
+        {[1, 2, 3, 4, 5].map((_, index) => (
           <span
             key={index}
             className={`swiper-pagination-bullet ${
@@ -262,10 +262,35 @@ const View = () => {
         </div>
       </section>
       <section className="framer-section">
-        <h1 className="framer-title">
-          <span className="framer-highlight">JUST</span> FOR YOU
-        </h1>
-        <p className="framer-subtitle">GAMING EQUIPMENT</p>
+        <div className="framer-wrapper">
+          <div className="framer-title">
+            <p>JUST</p>
+            <p className="fd">FOR YOU</p>
+          </div>
+          <p className="framer-subtitle">GAMING EQUIPMENT</p>
+        </div>
+        <div className="framer-product-container">
+          <div className="framer-product">
+            <img src="/assets/framer1.png" alt="" />
+            <p>TRY FIRST THE NEWEST</p>
+            <button className="framerbtn">Shop</button>
+          </div>
+          <div className="framer-product">
+            <img src="/assets/framer2.png" alt="" />
+            <p>OPTIMIZE YOUR GAME CONTOL</p>
+            <button className="framerbtn">Shop</button>
+          </div>
+        </div>
+      </section>
+      <section className="join-us">
+        <div className="join-us-wrapper">
+          <h1>
+            MAKE YOUR
+            <br />
+            BEST DECISION - <span>JOIN US</span>
+          </h1>
+          <button>Join</button>
+        </div>
       </section>
     </main>
   );
